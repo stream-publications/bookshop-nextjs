@@ -10,12 +10,12 @@ import {
 } from 'site-settings/site-navigation';
 const arr = [
   HOME_PAGE,
+  BOOK_PAGE,
   GROCERY_PAGE,
   CLOTHING_PAGE,
   MAKEUP_PAGE,
   BAGS_PAGE,
   FURNITURE_PAGE,
-  BOOK_PAGE,
   MEDICINE_PAGE,
 ];
 export function isCategoryPage(pathname) {

@@ -26,10 +26,7 @@ import { GlobalStyle } from "assets/styles/global.style";
 import { messages } from "site-settings/site-translation/messages";
 import "typeface-lato";
 import "typeface-poppins";
-// need to provide types
-const DemoSwitcher = dynamic(
-  () => import("components/demo-switcher/switcher-btn")
-);
+
 const AppLayout = dynamic(() => import("layouts/app-layout"));
 
 export default function ExtendedApp({ Component, pageProps }) {
@@ -51,7 +48,6 @@ export default function ExtendedApp({ Component, pageProps }) {
                     {...pageProps}
                     deviceType={{ mobile, tablet, desktop }}
                   />
-                  <DemoSwitcher />
                 </AppLayout>
               </AuthProvider>
             </AppProvider>
