@@ -39,10 +39,10 @@ We have used monorepo folder structure with Yarn Workspace. In our template we h
 
 # Getting Started & Installation
 
-For getting started with the template you have to follow the below procedure. First navigate to the `pickbazar` directory. Then run below command for getting started with specific part.
+For getting started with the template you have to follow the below procedure. First navigate to the `` directory. Then run below command for getting started with specific part.
 
 ```bash
-# on pickbazar directory
+# on  directory
 yarn
 ```
 
@@ -122,7 +122,7 @@ yarn build:api
 yarn serve:shop
 ```
 
-Note: for building the shop you need to had a running api (for demo purpose you can use our hosted api: https://pickbazar-api.now.sh/shop/graphql)
+Note: for building the shop you need to had a running api (for demo purpose you can use our hosted api: https://-api.now.sh/shop/graphql)
 
 <br><br><br>
 
