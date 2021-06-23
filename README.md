@@ -3,7 +3,7 @@
 	- checkout-alternative
 	- furniture-two
 	- grocery-two
-  - request-medicine
+  	- request-medicine
   Those files have been deleted. 
 
 
