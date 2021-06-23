@@ -1,10 +1,9 @@
-# This branch is to clean up the fiels from /packages/shop/src/pages
+# This branch is to clean up the code from site-nacigation
 	- bakery
 	- checkout-alternative
 	- furniture-two
 	- grocery-two
-  	- request-medicine
-  Those files have been deleted. 
+  Code witch is ralated with those files have been deleted. 
 
 
 # Introduction
