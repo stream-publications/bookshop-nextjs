@@ -1,4 +1,5 @@
-## delete Banner and offersection from type file
+## Update-banner
+solve the header overlap the slider bar  on PC - position : relative - &.sticky - header.style 
 
 
 

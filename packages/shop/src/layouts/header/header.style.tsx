@@ -39,7 +39,7 @@ export const SearchWrapper = styled.div`
 `;
 
 const HeaderWrapper = styled.header`
-  /* padding: 30px 60px; */
+    
   padding: 20px 30px;
   display: flex;
   align-items: center;
@@ -57,7 +57,6 @@ const HeaderWrapper = styled.header`
     background-color: transparent;
     box-shadow: none;
   }
-
   @media (min-width: 1600px) {
     padding: 25px 40px;
   }
@@ -65,7 +64,6 @@ const HeaderWrapper = styled.header`
   @media (max-width: 990px) {
     display: none;
   }
-
   .headerSearch {
     margin: 0 30px;
 
@@ -81,7 +79,6 @@ const HeaderWrapper = styled.header`
       }
     }
   }
-
   &.unSticky {
     animation: ${positionAnim} 0.3s ease;
     .headerSearch {
@@ -92,7 +89,7 @@ const HeaderWrapper = styled.header`
 
   &.sticky {
     background-color: ${themeGet('colors.white', '#ffffff')};
-    position: fixed;
+    position: relative;
     box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
     padding-top: 20px;
     padding-bottom: 20px;
@@ -101,7 +98,6 @@ const HeaderWrapper = styled.header`
       padding-top: 20px;
       padding-bottom: 20px;
     }
-
     .headerSearch {
       display: flex;
 

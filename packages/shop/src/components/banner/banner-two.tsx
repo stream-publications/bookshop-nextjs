@@ -42,7 +42,7 @@ export const Banner = ({ data }: Props) => {
         nextEl: '.banner-slider-next',
         prevEl: '.banner-slider-prev',
       }}
-      style={{ marginBottom: 25, minHeight: 180 }}
+      style={{ marginBottom: 25, minHeight: 180}}
     >
       {data.map((item, idx) => (
         <SwiperSlide key={idx}>
