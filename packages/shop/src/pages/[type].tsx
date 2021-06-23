@@ -3,8 +3,6 @@ import { GetStaticProps } from 'next';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { Modal } from '@redq/reuse-modal';
-import Carousel from 'components/carousel/carousel';
-import { Banner } from 'components/banner/banner';
 import { MobileBanner } from 'components/banner/mobile-banner';
 
 import {
@@ -15,7 +13,6 @@ import {
   MobileCarouselDropdown,
 } from 'assets/styles/pages.style';
 // Static Data Import Here
-import { siteOffers } from 'site-settings/site-offers';
 import { sitePages } from 'site-settings/site-pages';
 import { SEO } from 'components/seo';
 import { useRefScroll } from 'utils/use-ref-scroll';
@@ -52,16 +49,9 @@ const CategoryPage: React.FC<any> = ({ deviceType }) => {
       <ModalProvider>
         <Modal>
           <MobileBanner intlTitleId={page?.banner_title_id} type={PAGE_TYPE} />
-          <Banner
-            intlTitleId={page?.banner_title_id}
-            intlDescriptionId={page?.banner_description_id}
-            imageUrl={page?.banner_image_url}
-          />
-          <OfferSection>
-            <div style={{ margin: '0 -10px' }}>
-              <Carousel deviceType={deviceType} data={siteOffers} />
-            </div>
-          </OfferSection>
+
+
+
           <MobileCarouselDropdown>
             <Sidebar type={PAGE_TYPE} deviceType={deviceType} />
           </MobileCarouselDropdown>

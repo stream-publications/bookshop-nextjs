@@ -1,4 +1,4 @@
-# Change the <Header> to sticky which is always show Header from app-layout
+## delete Banner and offersection from type file
 
 
 
