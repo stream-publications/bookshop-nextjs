@@ -1,9 +1,5 @@
-# This branch is to clean up the code from site-nacigation
-	- bakery
-	- checkout-alternative
-	- furniture-two
-	- grocery-two
-  Code witch is ralated with those files have been deleted. 
+# Change the <Header> to sticky which is always show Header from app-layout
+
 
 
 # Introduction
