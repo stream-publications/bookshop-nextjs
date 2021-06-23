@@ -3,13 +3,12 @@ import { GetStaticProps } from 'next';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { Modal } from '@redq/reuse-modal';
-import { MobileBanner } from 'components/banner/mobile-banner';
+import { Banner } from 'components/banner/banner-two';
 
 import {
   MainContentArea,
   SidebarSection,
   ContentSection,
-  OfferSection,
   MobileCarouselDropdown,
 } from 'assets/styles/pages.style';
 // Static Data Import Here
@@ -20,6 +19,10 @@ import { initializeApollo } from 'utils/apollo';
 import { GET_PRODUCTS } from 'graphql/query/products.query';
 import { GET_CATEGORIES } from 'graphql/query/category.query';
 import { ModalProvider } from 'contexts/modal/modal.provider';
+
+import GroceryImgOne from 'assets/images/banner/grocery-banner-img-one.jpg';
+import GroceryImgTwo from 'assets/images/banner/grocery-banner-img-two.jpg';
+
 const Sidebar = dynamic(() => import('layouts/sidebar/sidebar'));
 const Products = dynamic(() =>
   import('components/product-grid/product-list/product-list')
@@ -43,14 +46,25 @@ const CategoryPage: React.FC<any> = ({ deviceType }) => {
   const PAGE_TYPE: any = query.type;
   const page = sitePages[PAGE_TYPE];
 
+  const bannerSlides = [
+    {
+      img: GroceryImgOne,
+      alt: 'Slide One',
+    },
+    {
+      img: GroceryImgTwo,
+      alt: 'Slide Two',
+    },
+  ];
+
+
+
   return (
     <>
       <SEO title={page?.page_title} description={page?.page_description} />
       <ModalProvider>
         <Modal>
-          <MobileBanner intlTitleId={page?.banner_title_id} type={PAGE_TYPE} />
-
-
+          <Banner data={bannerSlides} />
 
           <MobileCarouselDropdown>
             <Sidebar type={PAGE_TYPE} deviceType={deviceType} />
