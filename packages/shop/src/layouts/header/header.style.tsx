@@ -289,7 +289,7 @@ export const MobileHeaderInnerWrapper = styled.div`
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   transition: 0.25s ease-in-out;
 
   @media only screen and (max-width: 990px) {
@@ -308,7 +308,7 @@ export const MobileHeaderInnerWrapper = styled.div`
   }
 
   &.sticky {
-    position: fixed;
+    position: relative;
     background-color: ${themeGet('colors.white', '#ffffff')};
     box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
 

@@ -1,5 +1,7 @@
 ## Update-banner
-solve the header overlap the slider bar  on PC - position : relative - &.sticky - header.style 
+solve the header overlap the slider bar  on PC and mobile 
+position : relative - &.sticky - header.style - HeaderWrapper - pc
+position : relative - &.sticky - MobileHeaderInnerWrapper  - hearder.style
 
 
 
