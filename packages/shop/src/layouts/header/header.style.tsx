@@ -296,6 +296,10 @@ export const MobileHeaderInnerWrapper = styled.div`
     padding: 15px 20px;
   }
 
+  @media (min-width: 990px) {
+    display: none;
+  }
+
   &.home {
     position: absolute;
     background-color: transparent;
