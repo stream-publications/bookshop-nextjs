@@ -1,10 +1,8 @@
-# This branch is to clean up the fiels from /packages/shop/src/pages
-	- bakery
-	- checkout-alternative
-	- furniture-two
-	- grocery-two
-  	- request-medicine
-  Those files have been deleted. 
+## Update-banner
+solve the header overlap the slider bar  on PC and mobile 
+position : relative - &.sticky - header.style - HeaderWrapper - pc
+position : relative - &.sticky - header.style - MobileHeaderInnerWrapper - mobile
+add @media (min-width: 990px) { display: none;} - MobileHeaderInnerWrapper - mobile
 
 
 # Introduction
@@ -12,6 +10,7 @@
 Fastest E-commerce template built with React, NextJS, TypeScript, GraphQL, Type-GraphQL & Styled-Components. Its very easy to use, we used graphql and type-graphql, you can build your schema very easily. GraphQL playground makes it’s own documentation, your frontend team will love using it.
 
 # Tech We Have Used
+
 
 We have used monorepo folder structure with Yarn Workspace. In our template we have three different part Admin Dashboard, Shop and API. Tech specification for specific part is given below
 

@@ -6,6 +6,7 @@ import AuthenticationForm from 'features/authentication-form';
 import { RightMenu } from './menu/right-menu/right-menu';
 import { LeftMenu } from './menu/left-menu/left-menu';
 import HeaderWrapper from './header.style';
+import MobileDrawer from './mobile-drawer';
 import LogoImage from 'assets/images/StreamPublication-small.png';
 import UserImage from 'assets/images/user.jpg';
 import { isCategoryPage } from '../is-home-page';
@@ -54,7 +55,8 @@ const Header: React.FC<Props> = ({ className }) => {
     pathname === '/grocery-two' ||
     pathname === '/bakery';
   return (
-    <HeaderWrapper className={className} id="layout-header">
+    <HeaderWrapper className={className} id="layout-header">      
+      <MobileDrawer />
       <LeftMenu logo={LogoImage} />
       {showSearch && <Search minimal={true} className="headerSearch" />}
       <RightMenu
