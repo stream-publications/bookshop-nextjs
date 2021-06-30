@@ -96,13 +96,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     query: GET_PRODUCTS,
     variables: {
       type: params.type,
-      offset: 0,
+      offset: 0,  
       limit: 20,
     },
   });
   await apolloClient.query({
     query: GET_CATEGORIES,
-    variables: {
+    variables: { 
       type: params.type,
     },
   });

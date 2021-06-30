@@ -1,8 +1,6 @@
-## Update-banner
-solve the header overlap the slider bar  on PC and mobile 
-position : relative - &.sticky - header.style - HeaderWrapper - pc
-position : relative - &.sticky - header.style - MobileHeaderInnerWrapper - mobile
-add @media (min-width: 990px) { display: none;} - MobileHeaderInnerWrapper - mobile
+## add google login
+ ref: https://www.npmjs.com/package/react-google-login
+ 
 
 
 # Introduction

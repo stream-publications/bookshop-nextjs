@@ -1,3 +1,14 @@
+
+//Google Client ID
+//423339203799-ftp66iqgr9o65s0s1q8ki62gi0rtbiim.apps.googleusercontent.com
+//124441517271-ugfopl3moh6osct843rb12cfl8pese13.apps.googleusercontent.com
+//Google CLient Secret
+//OzrxVRr2fHbSNjg380nmW-V_
+//GoogleLogin
+import GoogleLogin from 'react-google-login';
+
+
+
 import React, { useContext } from 'react';
 import {
   LinkButton,
@@ -44,8 +55,13 @@ export default function SignInModal() {
       closeModal();
     }
   };
-
+  
+  const responseGoogle = (response) => {
+    console.log(response);
+    console.log(response.profileObj);
+  }
   return (
+
     <Wrapper>
       <Container>
         <Heading>
@@ -135,6 +151,16 @@ export default function SignInModal() {
             defaultMessage='Continue with Google'
           />
         </Button>
+
+        <GoogleLogin
+          clientId="124441517271-ugfopl3moh6osct843rb12cfl8pese13.apps.googleusercontent.com"
+          buttonText="Login"
+          onSuccess={responseGoogle}
+          onFailure={responseGoogle}
+          cookiePolicy={'single_host_origin'}
+        />
+
+
 
         <Offer style={{ padding: '20px 0' }}>
           <FormattedMessage
